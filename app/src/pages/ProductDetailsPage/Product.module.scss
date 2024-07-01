@@ -4,6 +4,32 @@
     width: 75%;
     max-width: 1200px;
     margin: auto;
+
+    @media screen and (max-width: 900px){
+        width: 100%;
+        padding: 0 20px;
+
+        .container {
+            .splitView {
+                flex-direction: column;
+                margin-bottom: 20px;
+
+                .imageContainer {
+                    margin-right: 0;
+                    width: 100%;
+
+                    .image {
+                        height: 320px;
+                    }
+                }
+
+                .productDetails {
+                    width: 100%;
+                }
+            
+            }
+        }
+    }
 }
 .container {
     background-color: $white;

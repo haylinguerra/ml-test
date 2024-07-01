@@ -26,6 +26,15 @@
           flex-direction: column;
           .itemGroup {
             display: flex;
+            @media screen and (max-width: 900px){
+              flex-direction: column;
+              .itemContainer {
+                width: 100%;
+              }
+              .itemLocation {
+                text-align: right;
+              }
+            }
           }
         }
 
@@ -88,6 +97,13 @@
     }
     .listItem:nth-last-child(1) .itemLink::after {
       visibility: hidden;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    .contentSection {
+      width: 100%;
+      padding: 0 20px;
     }
   }
 }

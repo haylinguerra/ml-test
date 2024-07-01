@@ -1,8 +1,10 @@
+@import "src/styles/variables";
+
 .headerSection {
   width: 100vw;
   display: flex;
   justify-content: center;
-  background-color: #ffe600;
+  background-color: $primary-color;
   padding: 10px 0px;
   flex-direction: row;
   .headerContainer {
@@ -12,6 +14,20 @@
     .headerImg {
       width: 50px;
       height: auto;
+    }
+  }
+
+  @media screen and (max-width: 900px){
+    width: 100%;
+
+    .headerContainer {
+      width: 100%;
+      justify-content: center;
+      padding: 0 20px;
+      .headerImg {
+        width: 40px;
+      }
+    
     }
   }
 }
@@ -33,6 +49,7 @@
   border: 0;
   padding: 0 10px;
   margin-left: 25px;
+  color: $dark-gray;
 }
 
 .searchInputError {
@@ -44,7 +61,7 @@
 }
 
 .searchInput::placeholder {
-  //   padding: 10px;
+  color: $light-black;
 }
 
 .headerSearchGroup button {

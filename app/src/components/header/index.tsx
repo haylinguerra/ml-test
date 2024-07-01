@@ -30,7 +30,7 @@ const Header: React.FC = () => {
                 <search className={styles.headerSearchGroup}>
                     <form className={styles.headerSearchForm} onSubmit={handleSearch}>
                         <input type="search" id="site-search" className={styles.searchInput} onChange={e => {setSearch(e.target.value)}} value={search} placeholder='Nunca dejes de buscar' name="q" required />
-                        <button type="submit" id="submit" data-testid="search-button"><img src={searchIcon} alt="" className={styles.searchIcon} /></button>
+                        <button type="submit" id="submit" data-testid="search-button" aria-label='Buscar'><img src={searchIcon} alt="icono de busqueda" className={styles.searchIcon} /></button>
                     </form>
                 </search>
             </div>
