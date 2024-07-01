@@ -1,0 +1,93 @@
+@import "src/styles/variables";
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+  .contentSection {
+    width: 75%;
+    max-width: 1200px;
+
+    .productList {
+      background-color: white;
+      padding: 0;
+
+      .listItem {
+        display: flex;
+        flex-direction: column;
+
+        gap: 50px;
+        .itemLink {
+          color: $dark-gray;
+          display: flex;
+          text-decoration: none;
+          padding: 24px 16px 0px 24px;
+          flex-direction: column;
+          .itemGroup {
+            display: flex;
+          }
+        }
+
+        .itemContainer {
+          display: flex;
+          width: 75%;
+          max-width: 1200px;
+          .itemImg {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 5px;
+          }
+
+          .itemMiddleGroup {
+            width: 65%;
+            margin-left: 20px;
+
+            h4 {
+              display: flex;
+              font-size: 1.5rem;
+              font-weight: 400;
+              margin: 10px 0px;
+              .itemShipping {
+                width: 22px;
+                height: 22px;
+                margin-top: 6px;
+                margin-left: 16px;
+                background-color: $green;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .itemIcon {
+                  width: 12px;
+                  margin-left: 2px;
+                  margin-top: 0;
+                  height: auto;
+                }
+              }
+            }
+            p {
+              margin: 10px 0px;
+            }
+          }
+        }
+        .itemLocation {
+          font-size: 0.9rem;
+          color: gray;
+        }
+      }
+    }
+    .listItem .itemLink::after {
+      content: "";
+      height: 4px;
+      margin-top: 24px;
+      background-color: #f6f6f6;
+      width: 100%;
+    }
+    .listItem:nth-last-child(1) .itemLink::after {
+      visibility: hidden;
+    }
+  }
+}

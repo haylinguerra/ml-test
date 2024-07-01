@@ -1,0 +1,25 @@
+@import "src/styles/variables";
+
+.breadCrumbsSection ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  color: gray;
+}
+
+.breadCrumbsSection li:not(li:nth-last-child(1))::after {
+  content: ">";
+  padding: 0 8px;
+}
+.breadCrumbsSection li:nth-last-child(1) {
+  font-weight: 600;
+}
+.breadCrumbsSection a {
+  color: inherit;
+  text-decoration: none;
+  text-decoration-color: $gray;
+}
+
+.breadCrumbsSection a:visited {
+  color: inherit;
+}

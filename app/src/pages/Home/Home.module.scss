@@ -1,0 +1,10 @@
+@import "src/styles/variables";
+
+.homeHeader {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: $gray;
+}
